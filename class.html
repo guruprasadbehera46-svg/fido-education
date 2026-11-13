@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FIDO Class Dashboard</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background: #f7f8ff;
+  color: #202447;
+  margin: 0;
+  padding: 25px;
+}
+header {
+  background: white;
+  padding: 20px;
+  color: #6555e8;
+  font-size: 27px;
+  font-weight: bold;
+  border-radius: 15px;
+}
+h1 { margin-top: 35px; }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
+  gap: 18px;
+}
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 17px;
+  text-decoration: none;
+  color: #6555e8;
+  box-shadow: 0 5px 18px #0001;
+}
+.card:hover { background: #eeeaff; }
+.card span { font-size: 35px; }
+.back { color: #6555e8; }
+</style>
+</head>
+<body>
+
+<header>FIDO 🎓</header>
+
+<h1 id="heading">Class Dashboard</h1>
+<p>Choose your favourite subject!</p>
+
+<div class="grid">
+  <a class="card" href="subject.html?name=Mathematics">
+    <span>🔢</span><h2>Mathematics</h2>
+  </a>
+  <a class="card" href="subject.html?name=Science">
+    <span>🔬</span><h2>Science</h2>
+  </a>
+  <a class="card" href="subject.html?name=English">
+    <span>📖</span><h2>English</h2>
+  </a>
+  <a class="card" href="subject.html?name=Social%20Science">
+    <span>🌍</span><h2>Social Science</h2>
+  </a>
+  <a class="card" href="subject.html?name=Computer">
+    <span>💻</span><h2>Computer</h2>
+  </a>
+</div>
+
+<br>
+<a class="back" href="index.html">← Back to Home</a>
+
+<script>
+const params = new URLSearchParams(location.search);
+const grade = params.get("grade") || "6";
+document.getElementById("heading").textContent =
+  "Class " + grade + " Dashboard";
+</script>
+
+</body>
+</html>
