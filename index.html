@@ -86,7 +86,12 @@
       margin-bottom: 30px;
     }
 
-    .cards {
+    .cards { inside the <style> section.
+            
+display: block;
+text-decoration: none;
+color: inherit;
+
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
       gap: 18px;
@@ -167,14 +172,53 @@
 
     <section id="classes">
       <h2>Choose Your Class 📚</h2>
-      <p class="subtitle">Find learning materials for your class.</p>
+    
+<div class="cards">
 
-      <div class="cards">
-        <div class="card"><div class="emoji">🌱</div><h3>Class 6</h3><p>Explore and learn</p></div>
-        <div class="card"><div class="emoji">🚀</div><h3>Class 7</h3><p>Build your basics</p></div>
-        <div class="card"><div class="emoji">💡</div><h3>Class 8</h3><p>Discover more</p></div>
-        <div class="card"><div class="emoji">🎯</div><h3>Class 9</h3><p>Grow your skills</p></div>
-        <div class="card"><div class="emoji">🏆</div><h3>Class 10</h3><p>Prepare for success</p></div>
+  <a class="card" href="class.html?grade=6">
+    <div class="emoji">🌱</div>
+    <h3>Class 6</h3>
+    <p>Explore and learn →</p>
+  </a>
+
+  <a class="card" href="class.html?grade=7">
+    <div class="emoji">🚀</div>
+    <h3>Class 7</h3>
+    <p>Build your basics →</p>
+  </a>
+
+  <a class="card" href="class.html?grade=8">
+    <div class="emoji">💡</div>
+    <h3>Class 8</h3>
+    <p>Discover more →</p>
+  </a>
+
+  <a class="card" href="class.html?grade=9">
+    <div class="emoji">🎯</div>
+    <h3>Class 9</h3>
+    <p>Grow your skills →</p>
+  </a>
+
+  <a class="card" href="class.html?grade=10">
+    <div class="emoji">🏆</div>
+    <h3>Class 10</h3>
+    <p>Prepare for success →</p>
+  </a>
+
+  <a class="card" href="class.html?grade=11">
+    <div class="emoji">🔥</div>
+    <h3>Class 11</h3>
+    <p>Go deeper →</p>
+  </a>
+
+  <a class="card" href="class.html?grade=12">
+    <div class="emoji">🎓</div>
+    <h3>Class 12</h3>
+    <p>Achieve your goals →</p>
+  </a>
+
+</div>
+
         <div class="card"><div class="emoji">🔥</div><h3>Class 11</h3><p>Go deeper</p></div>
         <div class="card"><div class="emoji">🎓</div><h3>Class 12</h3><p>Achieve your goals</p></div>
       </div>
